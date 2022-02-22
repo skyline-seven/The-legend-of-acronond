@@ -1,7 +1,6 @@
-from Ceribral import enestats
+from enestats import *
 from save import *
 from Error import *
-from Ceribral import Battle
 import os
 import random
 import time
@@ -18,6 +17,21 @@ Battle = 0
 damage = 2
 
 # Main Functions
+def mobgen():
+  rando = random.randint(1,1)
+def battle():
+  if rando == 1:
+    print("A Wild Zombie attacks")
+    print("What would you like to do\n\n(1) Attack\n\n(2) Defend\n\n(3) Run")
+    Battle = input("")
+    if Battle == "1":
+      print("Attacking Zombie")
+      time.sleep(0.5)
+      zombiehp - damage = zombiehp
+      print("Zombie hp:", zombiehp)
+      print("The Zombie attacked")
+      hp - zombieatk = hp
+      
 def opcheck():
   print("Welcome Your current options are\n\n(1) Grind\n\n(2) Check Stats\n\n(3) leave\n\n(4) Save")
   options = input("")

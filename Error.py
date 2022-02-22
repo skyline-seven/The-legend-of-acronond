@@ -1,4 +1,4 @@
-from Ceribral import enestats
+import enestats
 from save import *
 import os
 import random
