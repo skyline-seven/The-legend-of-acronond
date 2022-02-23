@@ -15,22 +15,25 @@ mobid = 0
 options = 0
 Battle = 0
 damage = 2
-
 # Main Functions
 def mobgen():
   rando = random.randint(1,1)
 def battle():
   if rando == 1:
-    print("A Wild Zombie attacks")
-    print("What would you like to do\n\n(1) Attack\n\n(2) Defend\n\n(3) Run")
-    Battle = input("")
-    if Battle == "1":
-      print("Attacking Zombie")
-      time.sleep(0.5)
-      zombiehp - damage = zombiehp
-      print("Zombie hp:", zombiehp)
-      print("The Zombie attacked")
-      hp - zombieatk = hp
+    while zombiehp != 0 or hp != 0:
+    
+      print("A Wild Zombie attacks")
+      print("What would you like to do\n\n(1) Attack\n\n(2) Defend\n\n(3) Run")
+      Battle = input("")
+      if Battle == "1":
+        print("Attacking Zombie")
+        time.sleep(0.5)
+        zombiehp -= damage
+        print("Zombie Hp:", zombiehp)
+        print("The Zombie attacked")
+        hp -= zombieatk
+        print("Your Hp", hp)
+        
       
 def opcheck():
   print("Welcome Your current options are\n\n(1) Grind\n\n(2) Check Stats\n\n(3) leave\n\n(4) Save")
